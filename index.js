@@ -33,6 +33,6 @@ app.post('/webhook', async (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
-  console.log(`Servidor activo en puerto ${PORT}`);
+app.listen(process.env.PORT, () => {
+  console.log(`Servidor activo en puerto ${process.env.PORT}`);
 });
